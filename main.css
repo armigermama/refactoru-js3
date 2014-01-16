@@ -1,0 +1,42 @@
+/* apply a natural box layout model to all elements */
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+
+.container {
+	max-width: 950px;
+	margin: 0 auto;
+	background-color: #CE9333;
+	display: block;
+}
+
+.bacon-side {
+	position: fixed;
+	display: block;
+	height: 70px;
+	width: 200px;
+	padding: 20px 40px;
+	right: 330px;
+	top: 30px;
+}
+
+.content, .sidebar {
+	font-family: georgia;
+	font-size: 16px, 24px;
+	line-height: 1.5;
+}
+
+.content {
+	position: relative;
+	display: block;
+	margin: 0 auto;
+	margin-right: 350px;
+	max-width: 950px;
+	padding: 20px;
+	border-right: solid silver 1px
+}
+
+.sidebar {
+	background-color: #666;
+	color: #FFF;
+}
